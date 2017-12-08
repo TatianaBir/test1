@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test</title>
+	
+<!-- 
+	<link href="css/bootstrap.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+  	<link rel="stylesheet" type="text/css" href="css/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="first" style="display:none;">
+			<div class="menu-active">
+	            <ul class="menu-list">
+	              <li><a href="#">Menu 1</a></li>
+	              <li><a href="#">Menu 2</a></li>
+	              <li><a href="#">Menu 3</a></li>
+	            </ul>
+	        </div>
+	</div>
+
+	<div class="seccond">
+
+		<div class="header">
+
+			<div class="header-menu">
+
+	          <div class="menu-burger">
+	            <i class="fa fa-bars" aria-hidden="true"></i> 
+	          </div>
+
+				<!-- Картинка в хеде -->
+	          <div class="header-image"><p id="text">Logo Big Image</p></div> 
+
+	          <div class="menu">
+	            <ul class="menu-list">
+	              <li><a href="#">Menu 1</a></li>
+	              <li><a href="#">Menu 2</a></li>
+	              <li><a href="#">Menu 3</a></li>
+	            </ul>
+	          </div>
+
+	        </div>
+
+	        <div class="header-btn"><p class="text">Help button</p></div>
+
+		</div>
+
+		<div class="content">
+			<div class="block-left">
+				<p>block 1 <br>250px</p>
+			</div>
+
+			<div class="block-center">
+				<p>block 2</p>
+				<div class="center-item">
+					<img src="img1.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				</div>
+				<div class="center-item">
+					<img src="img1.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				</div>
+				<div class="center-item">
+					<img src="img1.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				</div>
+				<div class="center-item">
+					<img src="img1.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				</div>
+				<div class="center-item">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+				</div>
+			</div>
+
+			<div class="block-right">
+				<p>block 3 <br>250px</p>
+			</div>
+		</div>
+
+
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript">
+	
+		$('.menu-burger').click(function() {
+			$('.menu-active').toggle();
+
+			// $('.first').removeAttr('style');
+
+			$('.first').css({'display': 'inline-block'});
+		});	
+
+		function windowSize(){
+		    if ($(window).width() <= '750'){
+		        $('#text').text('Logo Small Image');
+		    } else {
+		    	$('#text').text('Logo Big Image');
+		    }
+		}
+		$(window).resize(windowSize);
+	
+	</script>
+</body>
+</html>

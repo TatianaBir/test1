@@ -1,0 +1,52 @@
+@media (max-width: 750px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	.header-menu .menu {
+		display: none;
+	}
+
+	.menu-burger {
+		display: block;
+	}
+
+
+
+	.content {
+	display: block;
+	}
+
+	.block-center {
+		margin: 0;
+	}
+
+	.content div[class^="block-"] {
+		width: 100%;
+		margin-bottom: 10px;
+		height: inherit;
+	}
+
+	.content div[class^="block-"]:not(.block-center) {
+		padding: 100px 0;
+	}
+
+	.first {
+		float: left;
+		background-color: #696969;
+
+	}
+	.second {
+		float: left;
+	}
+
+	.center-item>p {
+		font-size: 1.1em;
+		overflow: hidden;
+	}
+
+	.header-image {
+		max-width: 30%;
+	}
+	
+}
